@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        .price {
+            text-align: left;
+        }
+
+        .price::before {
+            content: '$';
+        }
+
+        .price::after {
+            content: '元';
+        }
+
+        /* odd 基數 even偶數 */
+
+        tr:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        td:hover {
+
+            background-color: lightpink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th width="15%">
+                ID
+            </th>
+            <th width="15%">
+                商品名稱
+            </th>
+            <th>
+                價格
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div class="">
+                    1
+                </div>
+
+            </td>
+            <td>
+                <div class="box">
+                    咖啡
+                </div>
+            </td>
+            <td class="price">
+                100
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                花茶
+            </td>
+            <td class="price">
+                200
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3
+            </td>
+            <td>
+                餅感
+            </td>
+            <td class="price">
+                300
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+            <td>
+                <div class="box">
+                    甜點
+                </div>
+            </td>
+            <td class="price">
+                400
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5
+            </td>
+            <td>
+                香菸
+            </td>
+            <td class="price">
+                500
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
